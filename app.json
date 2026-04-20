@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Real Time Bus Tracking",
+    "slug": "real-time-bus-tracking",
+    "scheme": "bus-tracking",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "web": {
+      "bundler": "webpack",
+      "output": "static"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Bus Tracking to access your location while you are tracking a trip."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "00000000-0000-0000-0000-000000000000"
+      }
+    }
+  }
+}
